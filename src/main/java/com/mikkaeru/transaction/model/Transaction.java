@@ -32,4 +32,20 @@ public class Transaction {
         this.transactionId = transactionId;
         this.establishment = establishment;
     }
+
+    public Card getCard() {
+        return card;
+    }
+
+    public BigDecimal getValue() {
+        return value;
+    }
+
+    public String getTransactionId() {
+        return transactionId;
+    }
+
+    public Establishment getEstablishment() {
+        return establishment;
+    }
 }

@@ -16,15 +16,23 @@ public class Card {
     @Column(nullable = false)
     private String email;
     @Column(nullable = false)
-    private String cardCode;
+    private String cardNumber;
 
     /**
      * @deprecated Hibernate only
      */
     public Card() { }
 
-    public Card(String email, String cardCode) {
+    public Card(String email, String cardNumber) {
         this.email = email;
-        this.cardCode = cardCode;
+        this.cardNumber = cardNumber;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getCardNumber() {
+        return cardNumber;
     }
 }
